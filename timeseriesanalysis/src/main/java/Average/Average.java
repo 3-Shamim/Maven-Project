@@ -22,7 +22,7 @@ public class Average {
 
     public List<Double> getMovingAverage(List<Double> yValues, int period) {
         List<Double> movingAverage = new ArrayList<>();
-        Double sum = 0.0;
+        double sum = 0.0;
 
         for (int i = 0; i < yValues.size() - (period - 1); i++) {
 

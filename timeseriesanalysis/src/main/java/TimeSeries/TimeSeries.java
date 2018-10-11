@@ -30,10 +30,10 @@ public class TimeSeries {
         return S_I;
     }
 
-    public Map<Integer, Double> getAllSeasonalComponent(List<Double> siValues, int period) {
+    public List<Double> getAllSeasonalComponent(List<Double> siValues, int period) {
 
         Map<Integer, List<Double>> allSeasonalComponent = new HashMap<>();
-        Map<Integer, Double> allSeasonalComponentAverage = new HashMap<>();
+        List<Double> allSeasonalComponentAverage = new ArrayList<>();
 
 
         int counter = (period / 2) + 1;
@@ -59,10 +59,30 @@ public class TimeSeries {
 
         allSeasonalComponent.forEach((key, value) -> {
             double averageValue = value.stream().mapToDouble(v -> v).sum() / value.size();
-            allSeasonalComponentAverage.put(key, Double.valueOf(decimalFormat.format(averageValue)));
+            allSeasonalComponentAverage.add(Double.valueOf(decimalFormat.format(averageValue)));
         });
 
         return allSeasonalComponentAverage;
+    }
+
+    public List<Double> getSeasonalData(int period, int dataSize, List<Double> sessionalComponent) {
+        List<Double> seasonalData = new ArrayList<>();
+
+        for (int i = 0; i < (dataSize / period); i++) {
+            seasonalData.addAll(sessionalComponent);
+        }
+
+        return seasonalData;
+    }
+
+    public List<Double> getDeseasonalizeValue(List<Double> yValues, List<Double> sValues) {
+        List<Double> deseasonalizeValue = new ArrayList<>();
+
+        for (int i = 0; i < yValues.size(); i++) {
+            deseasonalizeValue.add(Double.valueOf(decimalFormat.format(yValues.get(i) / sValues.get(i))));
+        }
+
+        return deseasonalizeValue;
     }
 
 }
