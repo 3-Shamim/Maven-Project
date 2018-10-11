@@ -22,8 +22,7 @@ public class SimpleLinearRegression {
     }
 
     public double getY_Intercept() {
-        double slope = get_r_Value() * (get_Sy_value() / get_Sx_value());
-        return Double.parseDouble(decimalFormat.format(getMeanOfY() - (slope * getMeanOfX())));
+        return Double.parseDouble(decimalFormat.format(getMeanOfY() - (getSlope() * getMeanOfX())));
     }
 
     public double getSlope() {
