@@ -1,4 +1,4 @@
-package TimeSeries;
+package time_series;
 
 import Average.Average;
 import simple_linear_regression.SimpleLinearRegression;
@@ -10,7 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TimeSeries {
+public class TimeSeries_One {
+
 
     private Average average = new Average();
 
@@ -18,7 +19,7 @@ public class TimeSeries {
     private int period;
     private DecimalFormat decimalFormat = new DecimalFormat("#.##");
 
-    public TimeSeries(List<Double> yValues, int period) {
+    public TimeSeries_One(List<Double> yValues, int period) {
         this.yValues = yValues;
         this.period = period;
 
@@ -33,19 +34,6 @@ public class TimeSeries {
         return average.getMovingAverage(movingAverage(), 2);
     }
 
-    /*public List<Double> getSeasonalAndIrregularity(List<Double> yValues, List<Double> cmaValues, int period) {
-
-
-        List<Double> S_I = new ArrayList<>();
-
-        for (int i = 0; i < cmaValues.size(); i++) {
-            Double value = yValues.get(i + (period / 2)) / cmaValues.get(i);
-            S_I.add(Double.valueOf(decimalFormat.format(value)));
-        }
-
-
-        return S_I;
-    }*/
 
     private List<Double> getSeasonalAndIrregularity() {
 
@@ -63,7 +51,6 @@ public class TimeSeries {
 
         Map<Integer, List<Double>> allSeasonalComponent = new HashMap<>();
         List<Double> allSeasonalComponentAverage = new ArrayList<>();
-
 
         int counter = (period / 2) + 1;
 
@@ -94,41 +81,6 @@ public class TimeSeries {
         return allSeasonalComponentAverage;
     }
 
-    /*public List<Double> getAllSeasonalComponent(List<Double> siValues, int period) {
-
-        Map<Integer, List<Double>> allSeasonalComponent = new HashMap<>();
-        List<Double> allSeasonalComponentAverage = new ArrayList<>();
-
-
-        int counter = (period / 2) + 1;
-
-        List<Double> values;
-
-        for (Double d : siValues) {
-
-            if (allSeasonalComponent.get(counter) != null) {
-                values = allSeasonalComponent.get(counter);
-            } else {
-                values = new ArrayList<>();
-            }
-            values.add(d);
-            allSeasonalComponent.put(counter, values);
-
-            if (counter == period) {
-                counter = 0;
-            }
-
-            counter++;
-        }
-
-        allSeasonalComponent.forEach((key, value) -> {
-            double averageValue = value.stream().mapToDouble(v -> v).sum() / value.size();
-            allSeasonalComponentAverage.add(Double.valueOf(decimalFormat.format(averageValue)));
-        });
-
-        return allSeasonalComponentAverage;
-    }*/
-
     private List<Double> getSeasonalData() {
         List<Double> seasonalData = new ArrayList<>();
 
@@ -140,16 +92,6 @@ public class TimeSeries {
         return seasonalData;
     }
 
-    /*public List<Double> getSeasonalData(int period, int dataSize, List<Double> sessionalComponent) {
-        List<Double> seasonalData = new ArrayList<>();
-
-        for (int i = 0; i <= (dataSize / period); i++) {
-            seasonalData.addAll(sessionalComponent);
-        }
-
-        return seasonalData;
-    }*/
-
     private List<Double> getDeseasonalizeValue() {
         List<Double> deseasonalizeValue = new ArrayList<>();
 
@@ -159,16 +101,6 @@ public class TimeSeries {
 
         return deseasonalizeValue;
     }
-
-    /*public List<Double> getDeseasonalizeValue(List<Double> yValues, List<Double> sValues) {
-        List<Double> deseasonalizeValue = new ArrayList<>();
-
-        for (int i = 0; i < yValues.size(); i++) {
-            deseasonalizeValue.add(Double.valueOf(decimalFormat.format(yValues.get(i) / sValues.get(i))));
-        }
-
-        return deseasonalizeValue;
-    } */
 
     private List<Double> get_T_Values() {
 
@@ -201,6 +133,7 @@ public class TimeSeries {
 
         return result;
     }
+
 
 
 
