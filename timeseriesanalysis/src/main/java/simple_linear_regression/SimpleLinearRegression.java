@@ -7,7 +7,7 @@ import java.util.List;
 
 public class SimpleLinearRegression {
 
-    private DecimalFormat decimalFormat = new DecimalFormat("#.##");
+    private DecimalFormat decimalFormat = new DecimalFormat("#.###");
 
     private List<Double> xValue;
     private List<Double> yValue;
@@ -17,7 +17,7 @@ public class SimpleLinearRegression {
     public SimpleLinearRegression(List<Double> xValue, List<Double> yValue) {
         this.xValue = xValue;
         this.yValue = yValue;
-        decimalFormat.setRoundingMode(RoundingMode.CEILING);
+        decimalFormat.setRoundingMode(RoundingMode.HALF_UP);
         n = xValue.size() - 1;
     }
 
@@ -40,8 +40,10 @@ public class SimpleLinearRegression {
     private List<Double> xMinus_xMean() {
         List<Double> xMinus_xMean = new ArrayList<>();
 
+        double meanOfX = getMeanOfX();
+
         xValue.forEach(x -> {
-            xMinus_xMean.add(Double.valueOf(decimalFormat.format(x - getMeanOfX())));
+            xMinus_xMean.add(Double.valueOf(decimalFormat.format(x - meanOfX)));
         });
 
         return xMinus_xMean;
@@ -49,9 +51,10 @@ public class SimpleLinearRegression {
 
     private List<Double> yMinus_yMean() {
         List<Double> yMinus_yMean = new ArrayList<>();
+        double meanOfY = getMeanOfY();
 
         yValue.forEach(y -> {
-            yMinus_yMean.add(Double.valueOf(decimalFormat.format(y - getMeanOfY())));
+            yMinus_yMean.add(Double.valueOf(decimalFormat.format(y - meanOfY)));
         });
 
         return yMinus_yMean;

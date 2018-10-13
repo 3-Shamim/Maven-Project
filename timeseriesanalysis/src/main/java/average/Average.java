@@ -1,4 +1,4 @@
-package Average;
+package average;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -10,8 +10,8 @@ public class Average {
     private DecimalFormat decimalFormat;
 
     public Average() {
-        decimalFormat = new DecimalFormat("#.##");
-        decimalFormat.setRoundingMode(RoundingMode.CEILING);
+        decimalFormat = new DecimalFormat("#.###");
+        decimalFormat.setRoundingMode(RoundingMode.HALF_UP);
     }
 
     public double getAverage(List<Double> values) {

@@ -1,6 +1,6 @@
 package time_series;
 
-import Average.Average;
+import average.Average;
 import simple_linear_regression.SimpleLinearRegression;
 
 import java.math.RoundingMode;

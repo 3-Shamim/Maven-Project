@@ -1,6 +1,6 @@
 package prediction;
 
-import Average.Average;
+import average.Average;
 import time_series.TimeSeries;
 import simple_linear_regression.SimpleLinearRegression;
 

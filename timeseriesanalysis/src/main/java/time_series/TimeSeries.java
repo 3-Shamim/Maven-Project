@@ -9,11 +9,11 @@ import java.util.Map;
 
 public class TimeSeries {
 
-    private DecimalFormat decimalFormat = new DecimalFormat("#.##");
+    private DecimalFormat decimalFormat = new DecimalFormat("#.###");
 
     public TimeSeries() {
 
-        decimalFormat.setRoundingMode(RoundingMode.CEILING);
+        decimalFormat.setRoundingMode(RoundingMode.HALF_UP);
     }
 
     public List<Double> getSeasonalAndIrregularity(List<Double> yValues, List<Double> cmaValues, int period) {
