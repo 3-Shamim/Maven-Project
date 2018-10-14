@@ -10,7 +10,7 @@ public class Average {
     private DecimalFormat decimalFormat;
 
     public Average() {
-        decimalFormat = new DecimalFormat("#.###");
+        decimalFormat = new DecimalFormat("#.##");
         decimalFormat.setRoundingMode(RoundingMode.HALF_UP);
     }
 

@@ -11,7 +11,7 @@ public class File_Reader {
 
         List<Double> result = new ArrayList<>();
 
-        try(RandomAccessFile randomAccessFile = new RandomAccessFile("one_year_data.csv", "r")) {
+        try(RandomAccessFile randomAccessFile = new RandomAccessFile("one_year_data2.csv", "r")) {
 
             String line;
             boolean isFirstLine = true;

@@ -4,8 +4,7 @@ import file_reader.File_Reader;
 import prediction.Prediction;
 import time_series.TimeSeries_One;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
@@ -18,8 +17,9 @@ public class Main {
         int period1 = 7;
         int period = 4;
 
-
         List<Double> data = file_reader.getData();
+        Collections.reverse(data);
+
 
         int mod2 = data.size() % period2;
         int mod1 = data.size() % period1;
@@ -36,31 +36,22 @@ public class Main {
         List<Double> forecastValue = prediction.getForecastValue(y, period);
         System.out.println("Predicted Data: ");
         System.out.println(forecastValue.size());
-        System.out.println(forecastValue);*/
+        System.out.println(forecastValue);
 
-        System.out.println("------------------------------------------------------------");
-
-        System.out.println("Real Data: ");
-        System.out.println(y1.size());
-        System.out.println(y1);
+        System.out.println("------------------------------------------------------------");*/
 
         List<Double> forecastValue1 = prediction.getForecastValue(y1, period1);
         System.out.println("Predicted Data: ");
-        System.out.println(forecastValue1.size());
-        System.out.println(forecastValue1.subList(forecastValue1.size() - 14, forecastValue1.size()));
+        System.out.println(forecastValue1.subList(y1.size(), y1.size() + mod1));
+        System.out.println("Future Real Data: \n" + data.subList(y1.size(), data.size()));
 
         System.out.println("------------------------------------------------------------");
 
-        System.out.println("Real Data: ");
-        System.out.println(y2.size());
-        System.out.println(y2);
-
         List<Double> forecastValue2 = prediction.getForecastValue(y2, period2);
         System.out.println("Predicted Data: ");
-        System.out.println(forecastValue2.size());
-        System.out.println(forecastValue2.subList(forecastValue2.size() - 14, forecastValue2.size()));
+        System.out.println(forecastValue2.subList(y2.size(), y2.size() + mod2));
 
-        System.out.println("Future Real Data: \n" + data.subList(data.size() - 14, data.size()));
+        System.out.println("Future Real Data: \n" + data.subList(y2.size(), data.size()));
 
 
 
