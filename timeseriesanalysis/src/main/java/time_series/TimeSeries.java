@@ -109,6 +109,34 @@ public class TimeSeries {
         return result;
     }
 
+    public List<Double> getError(List<Double> y_Value, List<Double> forecast) {
+        List<Double> result = new ArrayList<>();
+
+        for (int i = 0; i < y_Value.size(); i++) {
+            result.add(Double.valueOf(decimalFormat.format(forecast.get(i) - y_Value.get(i))));
+        }
+
+        return result;
+    }
+
+    public List<Double> getErrorSquare(List<Double> errors) {
+        List<Double> result = new ArrayList<>();
+
+        errors.forEach(e -> {
+            result.add(Double.valueOf(decimalFormat.format(Math.pow(e, 2))));
+        });
+
+        return result;
+    }
+
+    public double sum_OfErrorSquare(List<Double> errorSquare) {
+        return Double.valueOf(decimalFormat.format(errorSquare.stream().mapToDouble(v -> v).sum()));
+    }
+
+    public double standardErrorOfEstimate(double sum_OfErrorSquare, int n) {
+        return Double.valueOf(decimalFormat.format(Math.sqrt(sum_OfErrorSquare/(n-2))));
+    }
+
 
 
 }

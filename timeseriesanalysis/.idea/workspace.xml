@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="742000b1-17b4-4337-928a-4fe5478d439e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/one_year_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/one_year_data1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/average/Average.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/average/Average.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file_reader/File_Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file_reader/File_Reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/average/Average.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/average/Average.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/file_reader/File_Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/file_reader/File_Reader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prediction/Prediction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prediction/Prediction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/time_series/TimeSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/time_series/TimeSeries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/prediction/Prediction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/time_series/TimeSeries.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,40 +24,40 @@
     <session id="-1809368590">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="3" />
           <entry key="csv#" value="1" />
-          <entry key="java" value="21" />
+          <entry key="java" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="2" />
-          <entry key="JAVA" value="21" />
+          <entry key="JAVA" value="22" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
-          <entry key="java" value="9382" />
+          <entry key="java" value="10200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9382" />
+          <entry key="JAVA" value="10200" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -72,37 +69,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/simple_linear_regression/SimpleLinearRegression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/time_series/TimeSeries.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/prediction/Prediction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="61" selection-end-column="91" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+            <state relative-caret-position="255">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1951#1952#0" expanded="true" />
+                <element signature="e#1977#1978#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/file_reader/File_Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="150">
               <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -140,12 +127,12 @@
         <option value="$PROJECT_DIR$/src/main/java/TimeSeries/TimeSeries1.java" />
         <option value="$PROJECT_DIR$/src/main/java/TimeSeries/TimeSeries.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/prediction/Prediction.java" />
         <option value="$PROJECT_DIR$/src/main/java/average/Average.java" />
-        <option value="$PROJECT_DIR$/src/main/java/time_series/TimeSeries.java" />
         <option value="$PROJECT_DIR$/src/main/java/simple_linear_regression/SimpleLinearRegression.java" />
         <option value="$PROJECT_DIR$/src/main/java/file_reader/File_Reader.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/time_series/TimeSeries.java" />
+        <option value="$PROJECT_DIR$/src/main/java/prediction/Prediction.java" />
       </list>
     </option>
   </component>
@@ -174,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -252,7 +240,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,16 +314,18 @@
       <workItem from="1539486929824" duration="179000" />
       <workItem from="1539487130771" duration="691000" />
       <workItem from="1539487842011" duration="1362000" />
+      <workItem from="1539528787218" duration="1198000" />
+      <workItem from="1539572980156" duration="1227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53030000" />
+    <option name="totallyTimeSpent" value="55455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1433" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3032651" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31045932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -394,25 +383,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/one_year_data.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/one_year_data1.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/prediction/Prediction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.~lock.one_year_data.csv#" />
     <entry file="file://$PROJECT_DIR$/src/main/java/average/Average.java">
@@ -425,30 +404,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/simple_linear_regression/SimpleLinearRegression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/file_reader/File_Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="150">
           <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/time_series/TimeSeries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -457,8 +416,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        <state relative-caret-position="255">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <element signature="e#1977#1978#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/time_series/TimeSeries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="136" column="85" selection-start-line="136" selection-start-column="85" selection-end-line="136" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/simple_linear_regression/SimpleLinearRegression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331">
+          <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/prediction/Prediction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="61" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

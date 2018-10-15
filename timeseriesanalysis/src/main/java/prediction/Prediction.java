@@ -61,7 +61,20 @@ public class Prediction {
 
         List<Double> forecastValues = timeSeries.getForecastValues(t_values, seasonalData);
 
+        /*------------------------ Error ----------------------------*/
+
+        List<Double> error = timeSeries.getError(y, forecastValues);
+
+        List<Double> errorSquare = timeSeries.getErrorSquare(error);
+
+        double sum_ofErrorSquare = timeSeries.sum_OfErrorSquare(errorSquare);
+
+        double standardErrorOfEstimate = timeSeries.standardErrorOfEstimate(sum_ofErrorSquare, y.size());
+        System.out.println("Standard Error Of Estimate\n" + standardErrorOfEstimate);
+
+
         return forecastValues;
+
     }
 
 }

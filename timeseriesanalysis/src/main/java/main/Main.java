@@ -27,7 +27,7 @@ public class Main {
         List<Double> y2 = data.subList(mod2, data.size());
         List<Double> y1 = data.subList(mod1, data.size());
 
-        /*List<Double> y = Arrays.asList(4.8, 4.1, 6.0, 6.5, 5.8, 5.2, 6.8, 7.4, 6.0, 5.6, 7.5, 7.8, 6.3, 5.9, 8.0, 8.4);
+        List<Double> y = Arrays.asList(4.8, 4.1, 6.0, 6.5, 5.8, 5.2, 6.8, 7.4, 6.0, 5.6, 7.5, 7.8, 6.3, 5.9, 8.0, 8.4);
 
         System.out.println("Real Data: ");
         System.out.println(y.size());
@@ -38,7 +38,7 @@ public class Main {
         System.out.println(forecastValue.size());
         System.out.println(forecastValue);
 
-        System.out.println("------------------------------------------------------------");*/
+        System.out.println("------------------------------------------------------------");
 
         List<Double> forecastValue1 = prediction.getForecastValue(y1, period1);
         System.out.println("Predicted Data: ");
